@@ -27,11 +27,11 @@ router.post(
     // revisa que se hayan completado los valores de username y password usando la función helper
     //validationLoggin(),
     async (req, res, next) => {
-      const { email,password } = req.body;
+      const { email, password } = req.body;
   
       try {
         // chequea si el username ya existe en la BD
-        const usernameExists = await User.findOne({ email }, "email");
+        const usernameExists = await User.findOne({ email });
         // si el usuario ya existe, pasa el error a middleware error usando next()
         if (usernameExists) return next(createError(400));
         else {

@@ -14,8 +14,6 @@ const {
 
 //LOGIN POST
 
-
-
 router.post(
     "/",
     //isNotLoggedIn(),
@@ -45,4 +43,4 @@ router.post(
     }
   );
 
-  module.exports =router;
+  module.exports = router;
