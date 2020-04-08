@@ -1,0 +1,13 @@
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+const evento = new Schema({
+
+nombre: String,
+descripcion: String,
+lugar: string,
+asistencia:{type: Schema.Types.ObjectId, ref: user}
+} 
+)
+const Evento = mongoose.model ("Evento", evento)
+
+module.exports = Evento;
