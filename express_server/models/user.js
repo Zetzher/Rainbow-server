@@ -2,6 +2,12 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const user = new Schema({
 
+    username:String,
+    password: {
+        type: String,
+        unique: true,
+        requiered: true,
+    },
     nombre: String,
     apellido: String,
     edad: Number,
@@ -10,13 +16,8 @@ const user = new Schema({
         required: true,
         unique: true
     },
-    password: {
-        type: String,
-        unique: true,
-        requiered: true,
-    },
     photo_url: String,
-    eventos: { type: Schema.Types.ObjectId, ref: evento }
+    eventos: [{ type: Schema.Types.ObjectId, ref: "Evento"}]
 
 })
 const User = mongoose.model ("User", user)
