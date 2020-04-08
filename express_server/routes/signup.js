@@ -11,15 +11,6 @@ const {
   validationLoggin,
 } = require("../helpers/middleware");
 
-//  POST '/signup'
-    router.get ('/', (req, res,next) => {
-        res.render ("signup")
-    })
-
-
-
-
-
 router.post(
     "/",
     // revisamos si el user no está ya logueado usando la función helper (chequeamos si existe req.session.currentUser)
@@ -31,7 +22,7 @@ router.post(
   
       try {
         // chequea si el username ya existe en la BD
-        const usernameExists = await User.findOne({ email });
+        const usernameExists = await User.findOne({ email}, "email");
         // si el usuario ya existe, pasa el error a middleware error usando next()
         if (usernameExists) return next(createError(400));
         else {
