@@ -7,20 +7,23 @@ const User = require("../models/user");
 
 // HELPER FUNCTIONS
 const {
-  isNotLoggedIn,
+    isNotLoggedIn,
   validationLoggin,
 } = require("../helpers/middleware");
 
 //  POST '/signup'
+    router.get ('/', (req, res,next) => {
+        res.render ("signup")
+    })
 
 router.post(
-    "/signup",
+    "/",
     // revisamos si el user no está ya logueado usando la función helper (chequeamos si existe req.session.currentUser)
-    isNotLoggedIn(),
+    //isNotLoggedIn(),
     // revisa que se hayan completado los valores de username y password usando la función helper
-    validationLoggin(),
+    //validationLoggin(),
     async (req, res, next) => {
-      const { username, password } = req.body;
+      const { username, password, email } = req.body;
   
       try {
         // chequea si el username ya existe en la BD
@@ -31,7 +34,7 @@ router.post(
           // en caso contratio, si el usuario no existe, hace hash del password y crea un nuevo usuario en la BD
           const salt = bcrypt.genSaltSync(saltRounds);
           const hashPass = bcrypt.hashSync(password, salt);
-          const newUser = await User.create({ username, password: hashPass });
+          const newUser = await User.create({ username, password: hashPass, email});
           // luego asignamos el nuevo documento user a req.session.currentUser y luego enviamos la respuesta en json
           req.session.currentUser = newUser;
           res
@@ -42,5 +45,6 @@ router.post(
         next(error);
       }
     }
-  );
+  );  
+
   module.exports = router;

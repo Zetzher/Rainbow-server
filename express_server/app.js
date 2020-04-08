@@ -28,7 +28,21 @@ mongoose.connect(process.env.MONGODB_URI, {
     });
 const app = express()
 
-
+app.use(
+    session({
+      store: new MongoStore({
+        mongooseConnection: mongoose.connection,
+        ttl: 24 * 60 * 60, // 1 day
+      }),
+      secret: process.env.SECRET_SESSION,
+      resave: true,
+      saveUninitialized: true,
+      cookie: {
+        maxAge: 24 * 60 * 60 * 1000,
+      },
+    })
+  );
+  
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -51,7 +65,7 @@ var login = require ('./routes/login')
 app.use('/',index);
 app.use ('/signup',signup)
 app.use ('/login', login)
-// app.use ('/perfil', perfil)
+//app.use ('/perfil', perfil)
 // app.use ('/eventos', eventos)
 // app.use ('/ocio', ocio)
 // app.use ('/chat', chat)
