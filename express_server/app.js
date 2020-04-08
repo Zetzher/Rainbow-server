@@ -55,6 +55,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 var index = require('./routes/index');
 var signup = require ('./routes/signup')
 var login = require ('./routes/login')
+var logout = require ('./routes/logout')
 // var perfil = require ('./routes/perfil')
 // var eventos = require ('./routes/eventos')
 // var ocio = require ('./routes/ocio')
@@ -65,6 +66,7 @@ var login = require ('./routes/login')
 app.use('/',index);
 app.use ('/signup',signup)
 app.use ('/login', login)
+app.use ('/logout', logout)
 //app.use ('/perfil', perfil)
 // app.use ('/eventos', eventos)
 // app.use ('/ocio', ocio)
