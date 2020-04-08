@@ -4,4 +4,4 @@ const router = express.Router()
 router.get ('/', (req, res,next) => {
     res.render ("index")
 })
-module.export = router
+module.exports = router
