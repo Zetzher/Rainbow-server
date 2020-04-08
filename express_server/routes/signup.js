@@ -16,6 +16,10 @@ const {
         res.render ("signup")
     })
 
+
+
+
+
 router.post(
     "/",
     // revisamos si el user no está ya logueado usando la función helper (chequeamos si existe req.session.currentUser)
