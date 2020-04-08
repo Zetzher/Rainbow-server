@@ -13,14 +13,13 @@ const {
 
 //  POST '/signup'
 
-router.post(
-    "/signup",
+router.post( "/",
     // revisamos si el user no está ya logueado usando la función helper (chequeamos si existe req.session.currentUser)
     isNotLoggedIn(),
     // revisa que se hayan completado los valores de username y password usando la función helper
     validationLoggin(),
     async (req, res, next) => {
-      const { username, password } = req.body;
+      const { username, password, email } = req.body;
   
       try {
         // chequea si el username ya existe en la BD
@@ -31,7 +30,7 @@ router.post(
           // en caso contratio, si el usuario no existe, hace hash del password y crea un nuevo usuario en la BD
           const salt = bcrypt.genSaltSync(saltRounds);
           const hashPass = bcrypt.hashSync(password, salt);
-          const newUser = await User.create({ username, password: hashPass });
+          const newUser = await User.create({ username, password: hashPass, email });
           // luego asignamos el nuevo documento user a req.session.currentUser y luego enviamos la respuesta en json
           req.session.currentUser = newUser;
           res
