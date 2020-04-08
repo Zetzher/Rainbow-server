@@ -4,7 +4,7 @@ const evento = new Schema({
 
 nombre: String,
 descripcion: String,
-lugar: string,
+lugar: String,
 asistencia:[{type: Schema.Types.ObjectId, ref: User}]
 } 
 )
