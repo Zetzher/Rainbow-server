@@ -42,6 +42,5 @@ var index = require('./routes/index');
 app.use('/', index);
 
 
-module.exports = router;
 module.exports = app;
 
