@@ -5,7 +5,7 @@ const evento = new Schema({
 nombre: String,
 descripcion: String,
 lugar: String,
-asistencia:[{type: Schema.Types.ObjectId, ref: User}]
+asistencia:[{type: Schema.Types.ObjectId, ref: "User"}]
 } 
 )
 const Evento = mongoose.model ("Evento", evento)
