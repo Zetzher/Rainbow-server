@@ -2,11 +2,9 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/user");
 
-
 //POST
 router.get('/', (req,res,next)=>{
 const userId = req.session.currentUser._id
-//console.log('session :', req.session.currentUser._id);
     User
     .findById(userId)
     .then(dbResponse => {
@@ -21,9 +19,7 @@ const userId = req.session.currentUser._id
 //EDIT PERFIL
 router.post('/edit/:id', async (req, res, next) => {
 	try {
-		//console.log(req.body);
 		const {username, nombre,apellido,edad,email, photo_url} = req.body;
-		console.log(req.body)
 		//const profilePicture = req.file ? req.file.secure_url : req.session.currentUser.photo_url;
 		await User.findByIdAndUpdate({
             _id: req.params.id
