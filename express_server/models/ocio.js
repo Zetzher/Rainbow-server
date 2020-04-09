@@ -1,14 +1,13 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
-const sauna = new Schema({
+const ocio = new Schema({
 
-saunas: {
     nombre: String,
     descripcion: String,
     calle: String,
-    image_url: String
-}
+    image_url: String,
+    type: Array
 })
-const Sauna = mongoose.model ("Sauna", sauna)
+const Ocio = mongoose.model ("Ocio", ocio)
 
-module.exports = Sauna
+module.exports = Ocio

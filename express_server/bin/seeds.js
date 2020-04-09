@@ -1,28 +1,97 @@
 const mongoose = require('mongoose');
-const Card = require('../models/Card');
-const Project = require('../models/Project');
-const User = require('../models/User');
+const Ocio = require('../models/ocio');
 
-mongoose.connect(process.env.MONGODB_URI, {
+
+mongoose.connect(`mongodb://localhost:27017/rainbow`, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
     useFindAndModify: false
 })
+Ocio.collection.drop();
+// nombre: String,
+// descripcion: String,
+// calle: String,
+// image_url: String
 
-const cards = [
-
+const ocio = [
     {
-        description: 'Tú a Frontend y yo a UX.',
-        type: 'A',
+        nombre: "arena",
+        descripcion: "holi",
+        calle: "holi",
+        image_url: "holi",
+        type: ["pub", "sexshop"]
+    },
+    {
+        nombre: "holi",
+        descripcion: "holi",
+        calle: "holi",
+        image_url: "holi",
+        type: ["pub", "sexshop"] 
+    },
+    {
+        nombre: "holi",
+        descripcion: "holi",
+        calle: "holi",
+        image_url: "holi",
+        type: ["pub", "sexshop"]
+    },
+    {
+        nombre: "holi",
+        descripcion: "holi",
+        calle: "holi",
+        image_url: "holi",
+        type: ["pub", "sexshop"]
+    },
+    {
+        nombre: "holi",
+        descripcion: "holi",
+        calle: "holi",
+        image_url: "holi",
+        type: ["pub", "sexshop"]
+    },
+    {
+        nombre: "holi",
+        descripcion: "holi",
+        calle: "holi",
+        image_url: "holi",
+        type: ["pub", "sexshop"]
+    },
+    {
+        nombre: "holi",
+        descripcion: "holi",
+        calle: "holi",
+        image_url: "holi",
+        type: ["pub", "sexshop"]
+    },
+    {
+        nombre: "holi",
+        descripcion: "holi",
+        calle: "holi",
+        image_url: "holi",
+        type: ["pub", "sexshop"]
+    },
+    {
+        nombre: "holi",
+        descripcion: "holi",
+        calle: "holi",
+        image_url: "holi",
+        type: ["pub", "sexshop"]
+    },
+    {
+        nombre: "holi",
+        descripcion: "holi",
+        calle: "holi",
+        image_url: "holi",
+        type: ["pub", "sexshop"]
     }
-
 ]
 
-Card.create(cards, (err) => {
+
+Ocio.create(ocio, (err) => {
     if (err) {
         throw (err)
     }
-    console.log(`Created ${cards.length} cards`)
+    console.log(`Created ${ocio.length} locales`)
     mongoose.connection.close();
 });
