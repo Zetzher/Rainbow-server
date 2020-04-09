@@ -13,6 +13,7 @@ Ocio.collection.drop();
 // descripcion: String,
 // calle: String,
 // image_url: String
+// type: ["pub", "sexshop"]
 
 const ocio = [
     {
