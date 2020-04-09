@@ -9,12 +9,12 @@ mongoose.connect(`mongodb://localhost:27017/rainbow`, {
     useFindAndModify: false
 })
 Ocio.collection.drop();
-// horario: String,
-// nombre: String,
-// descripcion: String,
-// calle: String,
-// image_url: String,
-// website: String,
+// horario: "string",
+// nombre: "string",
+// descripcion: "string",
+// calle: "string",
+// image_url: "string",
+// website: "string",
 // type: ["pub", "sexshop"]
 
 const ocio = [{
@@ -117,12 +117,12 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
@@ -150,7 +150,7 @@ const ocio = [{
         calle: "Carrer de Villarroel, 88, 08011 Barcelona",
         image_url: "https://scontent.fbcn10-1.fna.fbcdn.net/v/t1.0-9/15823654_1374428049246970_4053054315225863287_n.jpg?_nc_cat=101&_nc_sid=2d5d41&_nc_ohc=k_q4i1fpUmcAX8BrB82&_nc_ht=scontent.fbcn10-1.fna&oh=f1cd7bc97042266b4502a7ca42f280bb&oe=5EB3E798",
         website: "https://www.facebook.com/elcangrejoeixample/",
-        type: ["pub", "sexshop"]
+        type: ["pub"]
     },
     {
         horario: "Todos los días de 18:00 a 02:30/03:00",
@@ -159,159 +159,159 @@ const ocio = [{
         calle: "Carrer del Consell de Cent, 273, 08011 Barcelona",
         image_url: "https://u.tfstatic.com/restaurant_photos/151/418151/169/612/el-patio-central-vista-del-interior-bc1c7.jpg",
         website: "https://www.facebook.com/elpatiocentral",
+        type: ["pub", "restaurante"]
+    },
+    {
+        horario: "Todos los días de 18:00 a 02:30/03:00",
+        nombre: "Gingin",
+        descripcion: "Nuevo bar delante del Axel Hotel.",
+        calle: "Carrer d'Aribau, 40, 08011 Barcelona",
+        image_url: "https://pinksider.com/image/1244/0/0/w700h413/thumbnail.png?signature=o0dRI9Aiqu2nst-CGOejYgHdQF0=",
+        website: "https://www.gingingaybar.com/",
+        type: ["pub"]
+    },
+    {
+        horario: "De jueves a sábado de 19:00 a 03:00. Domingo de 17:00 a 24:00",
+        nombre: "La Casa de la Pradera",
+        descripcion: "Local alternativo y queer-inclusivo en el barrio de Raval.",
+        calle: "Carrer de les Carretes, 57, 08001 Barcelona",
+        image_url: "https://d33hncv3fqajvb.cloudfront.net/9097Ac-VU_DZiFzJoP432z6_z_Y=/1600x0/filters:quality(70)/location_photos/data/13274/original/la-casa-de-la-pradera-1527254410.jpg",
+        website: "https://m.facebook.com/lacasadelapraderaraval/",
+        type: ["pub"]
+    },
+    {
+        horario: "Todos los días de 16:00 a 02:00. Viernes y sábado hasta las 02:30",
+        nombre: "La Chapelle",
+        descripcion: "Pequeño bar gay, decorado con viejos objetos devocionales. Durante el día un café-bar relajado, por la noche muy concurrido con hombres de edad 30+.",
+        calle: "Carrer de Muntaner, 67, 08011 Barcelona",
+        image_url: "https://media-cdn.tripadvisor.com/media/photo-s/0b/47/44/e1/calido-ambiente.jpg",
+        website: "https://www.facebook.com/pages/La-Chapelle/194590847332632?rf=569129056925013",
+        type: ["pub"]
+    },
+    {
+        horario: "De martes a jueves de 19:00 a 01:00/02:30. Viernes y sábado de 19:00 y 03:00. En verano a partir de las 21:00",
+        nombre: "La Federica",
+        descripcion: "Bar hipster-friendly en el barrio de Poble-sec.",
+        calle: "Carrer de Salvà, 3, 08004 Barcelona",
+        image_url: "https://media-cdn.tripadvisor.com/media/photo-s/09/a8/d2/9b/la-federica.jpg",
+        website: "https://www.facebook.com/barlafederica",
+        type: ["pub"]
+    },
+    {
+        horario: "Todos los días de 18:30 a 02:30/03:00. Viernes y sábado hasta las 03:00/03:30",
+        nombre: "Madame Jasmine",
+        descripcion: "Bar queer inclusivo, ubicado en el barrio de Raval.",
+        calle: "Rambla del Raval, 22, 08001 Barcelona",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     },
     {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
-        type: ["pub", "sexshop"]
-    },
-    {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
-        type: ["pub", "sexshop"]
-    },
-    {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
-        type: ["pub", "sexshop"]
-    },
-    {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
-        type: ["pub", "sexshop"]
-    },
-    {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
-        type: ["pub", "sexshop"]
-    },
-    {
-        horario: String,
-        nombre: String,
-        descripcion: String,
-        calle: String,
-        image_url: String,
-        website: String,
+        horario: "string",
+        nombre: "string",
+        descripcion: "string",
+        calle: "string",
+        image_url: "string",
+        website: "string",
         type: ["pub", "sexshop"]
     }
 
