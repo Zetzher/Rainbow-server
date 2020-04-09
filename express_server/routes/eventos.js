@@ -28,8 +28,48 @@ router.post('/', (req,res,next)=>{
         res.status(200)
         .json(dbResponse)
     })
-    .catch(err => console.log('En metodo POST de Eventos ha ocurrido:', err))
-})
+    .catch(err => console.log('En metodo POST de Eventos ha ocurrido:', err));
+});
 
+//EDIT EVENTO
+router.post('/edit', async (req, res, next) => {
+	try {
+		//console.log(req.body);
+		const {
+			id,
+			nombre,
+			descripcion,
+			lugar
+		} = req.body;
+		console.log(req.body)
+		//console.log(id);
+		await Evento.findByIdAndUpdate({
+			_id: id //condición para encontrarlo
+		}, { 
+				nombre,
+                descripcion,
+                lugar
+        });
+        
+            res.status(200)
+            .json({nombre, descripcion, lugar})
+        
+	} catch (error) {
+		//console.log(error);
+	}
+});
+
+// POST delete Evento
+router.post('/:_id/delete', async (req, res, next) => {
+	try {
+		const id = req.params;
+		console.log('El evento con este id va a ser borrado:', id);
+        await Evento.findOneAndRemove(id);
+    } 
+    catch (error) {
+		next(error);
+    }
+    
+});
 
 module.exports = router;
