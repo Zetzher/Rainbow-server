@@ -7,12 +7,15 @@ const Evento = require ("../models/event")
 //GET
 router.get('/', (req,res,next)=>{
 
-    Eventos
+    Evento
     .find()
-    .then(() => {
+    .then(dbResponse => {
+        console.log(dbResponse)
         res.status(200)
+        .json(dbResponse)
     }
     )
+    .catch(err => console.log('En metodo GET de Eventos ha ocurrido:', err))
 })
 
 //POST
@@ -21,10 +24,11 @@ router.post('/', (req,res,next)=>{
     console.log(req.body)
     Evento
     .create({nombre,descripcion,lugar})
-    .then(() => {
+    .then((dbResponse) => {
         res.status(200)
+        .json(dbResponse)
     })
-
+    .catch(err => console.log('En metodo POST de Eventos ha ocurrido:', err))
 })
 
 
