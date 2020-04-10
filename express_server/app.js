@@ -11,6 +11,7 @@ const MongoStore = require('connect-mongo')(session);
 const bcrypt = require('bcrypt');
 const multer = require('multer');
 const favicon = require('serve-favicon')
+const cors = require('cors')
 
 
 mongoose.connect(process.env.MONGODB_URI, {
@@ -42,6 +43,14 @@ app.use(
       },
     })
   );
+
+  // CORS MIDDLEWARE SETUP
+app.use(
+  cors({
+    credentials: true,
+    origin: [process.env.PUBLIC_DOMAIN],
+  })
+);
   
 app.use(logger('dev'));
 app.use(express.json());
