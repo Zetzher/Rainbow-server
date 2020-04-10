@@ -19,7 +19,6 @@ router.post(
     //validationLoggin(),
     async (req, res, next) => {
       const { email, password } = req.body;
-  
       try {
         // chequea si el username ya existe en la BD
         const usernameExists = await User.findOne({ email}, "email");
