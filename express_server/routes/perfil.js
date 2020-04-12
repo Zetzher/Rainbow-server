@@ -25,8 +25,6 @@ router.post('/edit/:id', async (req, res, next) => {
         console.log('UserId', userId)
 		await User.findByIdAndUpdate({
             userId
-            
-            
 		}, { username, nombre,apellido,edad,email, photo_url});
         
             res.status(200)
