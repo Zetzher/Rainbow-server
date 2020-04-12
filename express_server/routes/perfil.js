@@ -19,10 +19,13 @@ const userId = req.session.currentUser._id
 //EDIT PERFIL
 router.post('/edit/:id', async (req, res, next) => {
 	try {
-		const {username, nombre,apellido,edad,email, photo_url} = req.body;
+        const {username, nombre,apellido,edad,email, photo_url} = req.body;
 		//const profilePicture = req.file ? req.file.secure_url : req.session.currentUser.photo_url;
+        const userId = req.params
+        console.log('UserId', userId)
 		await User.findByIdAndUpdate({
-            _id: req.params.id
+            userId
+            
             
 		}, { username, nombre,apellido,edad,email, photo_url});
         
