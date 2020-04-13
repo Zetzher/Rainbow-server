@@ -18,25 +18,23 @@ Ocio.collection.drop();
 // type: ["pub", "sexshop"]
 
 const ocio = [{
-        horario: "En construcción",
         nombre: "OGB World",
         descripcion: "El mejor encuentro de sexo en grupo de la ciudad",
-        calle: "En construcción",
         image_url: "https://www.layoproducciones.com/OGBWorld/wp-content/uploads/2018/09/OGB-World-Logo-movile-4.png",
         website: "https://www.layoproducciones.com/OGBWorld/?fbclid=IwAR0euxFdyXqUvQIzQCkcYPkZysCsUvgOWzpXIDf5OtKq04H5t2xCJILuokg",
         type: ["fetish", "sex"]
     },
     {
-        horario: "De martes a jueves de 22:30 a 02:30. Viernes y sábado de 22:30 a 03:30. Domingo de 21:30 a 23:00/01:30",
+        horario: "Martes y jueves 22:30-02:30. Viernes y sábado 22:30-03:30. Domingo 21:30-23:00/01:30",
         nombre: "Berlin Dark",
-        descripcion: "Es un 'HARD & FETISH' bar para relacionarse con otros hombres libremente y sin otras limitaciones que el respeto a los demás.",
+        descripcion: "Es un 'HARD & FETISH' sin otras limitaciones que el respeto a los demás.",
         calle: "Passatge de Prunera, 18 08004 Barcelona",
         image_url: "https://www.acegal.org/wp-content/uploads/2018/01/01-76.jpg",
         website: "http://www.berlindark.com/",
         type: ["fetish", "pub", "sex"]
     },
     {
-        horario: "Martes: de 17:00 a 23:00. Miércoles: de 17:00 a 23:00. Jueves: de 17:00 a 23:00. Viernes: de 23:00 a 05:00. Sábado: de 23:00 a 05:00. Domingo: de 17:00 a 23:00",
+        horario: "Martes 17:00-23:00. Miércoles 17:00-23:00. Jueves 17:00-23:00. Viernes23:00-05:00. Sábado 23:00-05:00. Domingo 17:00-23:00",
         nombre: "Black Hole Barcelona",
         descripcion: "El fetish & sex club gay más grande de Barcelona donde podrás encontrar 400m2 de morbo y sexo en la ciudad.",
         calle: "C/ Sepúlveda, 81 08015 Barcelona",
@@ -45,7 +43,7 @@ const ocio = [{
         type: ["pub", "fetish", "sex"]
     },
     {
-        horario: "De lunes a viernes de 12:00 a 23:00. Sábado y domingo de 15:00 a 24:00",
+        horario: "Lunes a viernes 12:00-23:00. Sábado y domingo 15:00-24:00",
         nombre: "Boyberry",
         descripcion: "Sex-shop gay con gran zona de cruising, distribuida en dos plantas.",
         calle: "Carrer de Calàbria, 96, 08015 Barcelona",
@@ -63,16 +61,16 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Miercoles y jueves de 23:00 a 04:00. Viernes de 23:00 a 07:00. Sábado de 23:00 a 08:00. domingo de 23:00 a 04:00. Vísperas de festivo de 23:00 a 06:00",
+        horario: "Miercoles y jueves 23:00-04:00. Viernes 23:00-07:00. Sábado 23:00-08:00. Domingo 23:00-04:00. Vísperas 23:00-06:00",
         nombre: "Open Mind",
-        descripcion: "Extenso club de cruising gay, distribuido en dos plantas. Club privado y todos los chicos que lo visitan están obligados a registrarse y hacerse socio, por un día, 3 meses o 1 año.",
+        descripcion: "Club privado y todos los chicos que lo visitan están obligados a registrarse y hacerse socio, por un día, 3 meses o 1 año.",
         calle: "Carrer d'Aragó, 130, 08011 Barcelona",
         image_url: "https://www.openmindbcn.com/images/openmind/instalaciones/cache_2457955371.jpg",
         website: "http://www.openmindbcn.com/es",
         type: ["pub", "cruising"]
     },
     {
-        horario: "Lunes y domingo de 18:00 a 00:00. Jueves de 18:00 a 00:00. Viernes y sábado de 22:00 a 05:00",
+        horario: "Lunes y domingo 18:00-00:00. Jueves 18:00-00:00. Viernes y sábado 22:00-05:00",
         nombre: "XManClub",
         descripcion: "Sexclub gay para la comunidad fetichista en Barcelona.",
         calle: "C/ Calabria 91, Barcelona",
@@ -81,16 +79,16 @@ const ocio = [{
         type: ["pub", "sex", "fetish"]
     },
     {
-        horario: "De lunes a jueves de 18:00 a 02:30. Viernes y sábado de 18:00 a 03:00",
+        horario: "Lunes a jueves 18:00-02:30. Viernes y sábado 18:00-03:00",
         nombre: "Bacon Bear Bar",
-        descripcion: "El nombre lo dice todo. Bacon Bear Bar es uno de los bares más populares de Barcelona, daddies, chubby men y sus amigos os están esperando.",
+        descripcion: "Bacon Bear Bar es uno de los bares más populares de Barcelona, daddies, chubby men y sus amigos os están esperando.",
         calle: "Casanova 64 08011 Barcelona",
         image_url: "https://haztequeer.com/wp-content/uploads/2019/04/Bacon-Bear-Gay-Bar-Barcelona.jpg",
         website: "https://www.facebook.com/baconbearbar/",
         type: ["pub"]
     },
     {
-        horario: "Todos los días 23:00 – 05:00/06:00",
+        horario: "Todos los días 23:00–05:00/06:00",
         nombre: "Believe",
         descripcion: "Bar gay con pequeño escenario, drag hosts, espectáculos y karaoke.",
         calle: "Carrer de Balmes, 56, 08011 Barcelona",
@@ -99,7 +97,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Todos los días de 18:00 a 02:30. Viernes y sábado hasta de 18:00 a 03:00",
+        horario: "Todos los días 18:00-02:30. Viernes y sábado 18:00-03:00",
         nombre: "Botanic",
         descripcion: "Bar musical con varios rincones y con una pequeña terraza en el patio",
         calle: "Carrer de Muntaner, 64, 08011 Barcelona",
@@ -117,16 +115,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "string",
-        nombre: "string",
-        descripcion: "string",
-        calle: "string",
-        image_url: "string",
-        website: "string",
-        type: ["pub", "sexshop"]
-    },
-    {
-        horario: "De martes a domingo de 18:00 a 21:30 y de 02:30 a 03:00",
+        horario: "De martes a domingo 18:00-21:30 y de 02:30-03:00",
         nombre: "BoysBar",
         descripcion: "Bar musical gay en el barrio de Eixample.",
         calle: "Carrer de la Diputació, 174, 08011 Barcelona",
@@ -135,7 +124,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "De miércoles de 20:00 a 02:30. De jueves a sábado de 20:00 a 03:00. Domingo de 20:00 a 02:30",
+        horario: "Miércoles de 20:00 a 02:30. Jueves a sábado 20:00-03:00. Domingo de 20:00-02:30",
         nombre: "Demn's",
         descripcion: "Intimo, neon-lit y energetico bar gay con cócteles.",
         calle: "Carrer del Consell de Cent, 257, 08011 Barcelona",
@@ -144,7 +133,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Viernes y sábado de 23:00 a 03:30",
+        horario: "Viernes y sábado 23:00-03:30",
         nombre: "El Cangrejo, (Eixample)",
         descripcion: "Bar gay con pista de baile y música Pop internacional y español de las últimas décadas.",
         calle: "Carrer de Villarroel, 88, 08011 Barcelona",
@@ -153,7 +142,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Todos los días de 18:00 a 02:30/03:00",
+        horario: "Todos los días 18:00-02:30/03:00",
         nombre: "El patio central",
         descripcion: "Bar de copas en el corazon del Eixample.",
         calle: "Carrer del Consell de Cent, 273, 08011 Barcelona",
@@ -162,7 +151,7 @@ const ocio = [{
         type: ["pub", "restaurante"]
     },
     {
-        horario: "Todos los días de 18:00 a 02:30/03:00",
+        horario: "Todos los días 18:0002:30/03:00",
         nombre: "Gingin",
         descripcion: "Nuevo bar delante del Axel Hotel.",
         calle: "Carrer d'Aribau, 40, 08011 Barcelona",
@@ -171,7 +160,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "De jueves a sábado de 19:00 a 03:00. Domingo de 17:00 a 24:00",
+        horario: "Jueves a sábado 19:00-03:00. Domingo de 17:00-24:00",
         nombre: "La Casa de la Pradera",
         descripcion: "Local alternativo y queer-inclusivo en el barrio de Raval.",
         calle: "Carrer de les Carretes, 57, 08001 Barcelona",
@@ -180,16 +169,16 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Todos los días de 16:00 a 02:00. Viernes y sábado hasta las 02:30",
+        horario: "Todos los días 16:00-02:00. Viernes y sábado hasta las 02:30",
         nombre: "La Chapelle",
-        descripcion: "Pequeño bar gay, decorado con viejos objetos devocionales. Durante el día un café-bar relajado, por la noche muy concurrido con hombres de edad 30+.",
+        descripcion: "Decorado con viejos objetos devocionales. Durante el día un café-bar relajado, por la noche muy concurrido con hombres de edad 30+.",
         calle: "Carrer de Muntaner, 67, 08011 Barcelona",
         image_url: "https://media-cdn.tripadvisor.com/media/photo-s/0b/47/44/e1/calido-ambiente.jpg",
         website: "https://www.facebook.com/pages/La-Chapelle/194590847332632?rf=569129056925013",
         type: ["pub"]
     },
     {
-        horario: "De martes a jueves de 19:00 a 01:00/02:30. Viernes y sábado de 19:00 y 03:00. En verano a partir de las 21:00",
+        horario: "De martes a jueves 19:00-01:00/02:30. Viernes y sábado 19:00-03:00. En verano a partir de las 21:00",
         nombre: "La Federica",
         descripcion: "Bar hipster-friendly en el barrio de Poble-sec.",
         calle: "Carrer de Salvà, 3, 08004 Barcelona",
@@ -198,7 +187,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Todos los días de 18:30 a 02:30/03:00. Viernes y sábado hasta las 03:00/03:30",
+        horario: "Todos los días 18:30-02:30/03:00. Viernes y sábado hasta las 03:00/03:30",
         nombre: "Madame Jasmine",
         descripcion: "Bar queer inclusivo, ubicado en el barrio de Raval.",
         calle: "Rambla del Raval, 22, 08001 Barcelona",
@@ -207,7 +196,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Todos los días de 18:00 a 02:30/03:00",
+        horario: "Todos los días 18:00-02:30/03:00",
         nombre: "Moeem",
         descripcion: "Bar gay en el centro de Barcelona.",
         calle: "Carrer de Muntaner, 11, 08011 Barcelona",
@@ -225,7 +214,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "De lunes a jueves de 20:00 a 03:00. Viernes y sábado de 20:00 a 04:00. Domingo de 19:00 a 03:00",
+        horario: "De lunes a jueves 20:00-03:00. Viernes y sábado 20:00-04:00. Domingo 19:00-03:00",
         nombre: "People Lounge",
         descripcion: "Bar gay en el Eixample con música y decoración de décadas pasadas.",
         calle: "Carrer de Villarroel, 71, 08011 Barcelona",
@@ -234,7 +223,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "De miércoles a domingo de 20:00 a 01:00+. Viernes y sábado hasta las 02:00",
+        horario: "De miércoles a domingo 20:00-01:00+. Viernes y sábado hasta las 02:00",
         nombre: "Plata Bar",
         descripcion: "Café-bar y lounge de cócteles con pequeña terraza en la calle.",
         calle: "Carrer del Consell de Cent, 233, 08011 Barcelona",
@@ -243,7 +232,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Todos los días de 18:00 a 03:00",
+        horario: "Todos los días 18:00-03:00",
         nombre: "Priscilla",
         descripcion: "Café-bar gay en el Eixample. Videos musicales, drags y más.",
         calle: "Carrer de Muntaner, 73, 08011 Barcelona",
@@ -252,7 +241,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Todos los días de 18:00 a 02:30. Viernes y sábado hasta las 03:00",
+        horario: "Todos los días 18:00-02:30. Viernes y sábado hasta las 03:00",
         nombre: "Punto BCN",
         descripcion: "Bar popular en el Eixample para quedar con amigos y uno de los bares gay más antiguos de Barcelona.",
         calle: "Carrer de Muntaner, 65, 08007 Barcelona",
@@ -261,7 +250,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Está abierto al público por la tarde a partir de  las 20:00/21:00.",
+        horario: "Está abierto al público por la tarde a partir de las 20:00/21:00.",
         nombre: "Sky Bar (Hotel Axel)",
         descripcion: "La terraza del hotel gay Axel. Lounge bar y vistas del barrio Eixample de Barcelona.",
         calle: "Carrer d'Aribau, 33, 08011 Barcelona",
@@ -270,7 +259,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "De martes a sábado de 18:00 a 02:30. Domingo de 18:00 a 24:00",
+        horario: "De martes a sábado 18:00-02:30. Domingo 18:00-24:00",
         nombre: "The Moon",
         descripcion: "Bar gay en el centro de Barcelona, decorado con un toque de Caribe.",
         calle: "Carrer de Muntaner, 6, 08015 Barcelona",
@@ -279,16 +268,16 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "De martes a jueves de 19:00 a 24:00. De viernes y sábado de 19:00 a 02:30. Domingo de 19:00 a 24:00",
+        horario: "De martes a jueves 19:00-24:00. De viernes y sábado 19:00-02:30. Domingo 19:00-24:00",
         nombre: "Versailles Barcelona",
-        descripcion: "El nombre de este lounge bar gay es programa: todo el bar está decorado al estilo del palacio real de Versalles en Francia.",
+        descripcion: "Todo el bar está decorado al estilo del palacio real de Versalles en Francia.",
         calle: "Passatge de Valeri Serra, 3, 08011 Barcelona",
         image_url: "https://www.travelgay.com/wp-content/uploads/2016/11/Versailles-Barcelona-gay-bar-main.jpg",
         website: "https://www.google.com/search?q=versailles+bar+gay+barcelona&rlz=1C5CHFA_enES859ES859&oq=versailles+bar+gay+barcelona&aqs=chrome..69i57j0l7.3715j0j7&sourceid=chrome&ie=UTF-8",
         type: ["pub"]
     },
     {
-        horario: "De jueves a sábado de 18:00 a 03:00. Domingo de 17:00 a 24:00",
+        horario: "De jueves a sábado 18:00-03:00. Domingo 17:00-24:00",
         nombre: "Wings House",
         descripcion: "Nuevo bar de cócteles en el barrio de Eixample.",
         calle: "Carrer del Consell de Cent, 220, 08011 Barcelona",
@@ -297,9 +286,9 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Todos los días de 11:00 a 22:00",
+        horario: "Todos los días 11:00-22:00",
         nombre: "Sauna Bruc",
-        descripcion: "Nuestro público habitual es gente mayor, maduros, los denominados daddies,  también gorditos o “chubbies”, ¿pero vienen jóvenes?  Venir, vienen, pero menos y normalmente les gustan gorditos o maduros, ositos, son los denominados “chasers”.",
+        descripcion: "Nuestro público habitual es gente mayor, maduros, los denominados daddies,  también gorditos o “chubbies”",
         calle: "Carrer de Pau Claris, 87, 08010 Barcelona",
         image_url: "https://www.travelgay.com/wp-content/uploads/2012/02/Sauna-Bruc-Barcelona-gay-sauna-main.webp",
         website: "https://saunabruc.com/",
@@ -324,7 +313,7 @@ const ocio = [{
         type: ["sauna"]
     },
     {
-        horario: "De Lunes a jueves de 13:00 a 23:45. Fin de semana 24 horas. Visperas festivo de 13:00 a 00:00",
+        horario: "De Lunes a jueves 13:00-23:45. Fin de semana 24 horas. Visperas 13:00-00:00",
         nombre: "Sauna Galilea",
         descripcion: "Sauna gay urbana en pleno centro de Barcelona. Cuatro plantas donde podrás divertirte y encontrar el relax, fiestas y descuentos que te mereces.",
         calle: "Carrer de Calàbria, 59, 08015 Barcelona",
@@ -450,7 +439,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Viernes, sábado 23:30 – 03:00/03:30",
+        horario: "Viernes y sábado 23:30–03:00/03:30",
         nombre: "Museum",
         descripcion: "Bar gay múy popular, con videos musicales, pista de baile y decoración cambiante (relacionado con museos de arte",
         calle: "C. de Sepúlveda 178",
@@ -459,7 +448,7 @@ const ocio = [{
         type: ["pub"]
     },
     {
-        horario: "Viernes de 12:30 a 06:00. Sábado de 01:30 a 06:00",
+        horario: "Viernes 12:30-06:00. Sábado 01:30-06:00",
         nombre: "Sala Tango",
         descripcion: "Las noches más divertidas del centro de Barcelona.",
         calle: "Carrer de la Diputació, 94, 08015 Barcelona",
@@ -468,7 +457,7 @@ const ocio = [{
         type: ["discoteca"]
     },
     {
-        horario: "Sábados de 00:00 a 06:00",
+        horario: "Sábados 00:00-06:00",
         nombre: "Sala Safari",
         descripcion: " ¡Vive una experiencia salvaje! Las mejores fiestas y eventos de Barcelona en sus dos salas.",
         calle: "Carrer de Tarragona, 141, 08014 Barcelona",
@@ -477,7 +466,7 @@ const ocio = [{
         type: ["discoteca"]
     },
     {
-        horario: "De lunes a jueves de 20:00 a 05:00. Viernes y sábados de 20:00 a 06:00. Domingo de 19:00 a 00:00",
+        horario: "Lunes a jueves 20:00-05:00. Viernes y sábados 20:00-06:00. Domingo 19:00-00:00",
         nombre: "Sala Apolo",
         descripcion: "La sala discoteca más antigua de España y un referente cultural.",
         calle: "Carrer Nou de la Rambla, 113, 08004 Barcelona",
@@ -505,7 +494,7 @@ const ocio = [{
     },
 
     {
-        horario: "Lunes-sábado de 12:00 a 21:00",
+        horario: "Lunes a sábado 12:00-21:00",
         nombre: "Boxer",
         descripcion: "string",
         calle: "Carrer de la Diputació, 182, 08011 Barcelona",
@@ -514,7 +503,7 @@ const ocio = [{
         type: ["sexshop"]
     },
     {
-        horario: "Lunes-sábado de 10:00 a 20:00",
+        horario: "Lunes a sábado 10:00-20:00",
         nombre: "ES Collection / Addicted",
         descripcion: "Bañadores, calzoncillos, ropa de deporte y camisetas.",
         calle: "C. del Consell de Cent 218",
@@ -523,7 +512,7 @@ const ocio = [{
         type: ["sexshop"]
     },
     {
-        horario: "Lunes a jueves de 11:00 a 23:00; viernes de 11:00 a 24:00; sábado de 12:00 a 24:00; domingo 12:00 – 23:00",
+        horario: "Lunes a jueves 11:00-23:00; Viernes 11:00-24:00; Sábado de 12:00-24:00; Domingo 12:00–23:00",
         nombre: "Nostromo",
         descripcion: "Pequeño sex-shop gay en el barrio de Eixample.",
         calle: " C. de la Diputació 208",
@@ -532,7 +521,7 @@ const ocio = [{
         type: ["sexshop"]
     },
     {
-        horario: "De lunes a sábado de 10:00 a 21:00",
+        horario: "Lunes a sábado 10:00-21:00",
         nombre: "Sestienda",
         descripcion: "",
         calle: "C. de Rauric 11",
@@ -541,9 +530,8 @@ const ocio = [{
         type: ["sexshop"]
     },
     {
-        horario: "De lunes a sábado de 10:00 a 21:00",
+        horario: "Lunes a sábado 10:00-21:00",
         nombre: "Zeus",
-        descripcion: "",
         calle: "C. de la Riera Alta 20",
         image_url: "data:image/jpeg;base64,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",
         website: "https://www.zeusxshop.com/",
