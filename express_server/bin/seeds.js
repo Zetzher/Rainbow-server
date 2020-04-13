@@ -24,7 +24,7 @@ const ocio = [{
         calle: "En construcción",
         image_url: "https://www.layoproducciones.com/OGBWorld/wp-content/uploads/2018/09/OGB-World-Logo-movile-4.png",
         website: "https://www.layoproducciones.com/OGBWorld/?fbclid=IwAR0euxFdyXqUvQIzQCkcYPkZysCsUvgOWzpXIDf5OtKq04H5t2xCJILuokg",
-        type: ["fetish", "bar", "sex"]
+        type: ["fetish", "sex"]
     },
     {
         horario: "De martes a jueves de 22:30 a 02:30. Viernes y sábado de 22:30 a 03:30. Domingo de 21:30 a 23:00/01:30",
@@ -33,7 +33,7 @@ const ocio = [{
         calle: "Passatge de Prunera, 18 08004 Barcelona",
         image_url: "https://www.acegal.org/wp-content/uploads/2018/01/01-76.jpg",
         website: "http://www.berlindark.com/",
-        type: ["fetish", "bar", "sex"]
+        type: ["fetish", "pub", "sex"]
     },
     {
         horario: "Martes: de 17:00 a 23:00. Miércoles: de 17:00 a 23:00. Jueves: de 17:00 a 23:00. Viernes: de 23:00 a 05:00. Sábado: de 23:00 a 05:00. Domingo: de 17:00 a 23:00",
@@ -387,8 +387,8 @@ const ocio = [{
         type: ["cruising"]
     },
     {
-        horario: "App",
-        nombre: "Es la manera más práctica para que Mahoma no tenga ni que ir a la montaña. Te permite saber si en el sitio en el que estás hay alguien disponible. Está el Tinder, sobre todo para los heteros, el Grindr, para los hombres homos, y el Qrushr, para las mujeres lesbis. Vale la pena hacerse buenas fotos.",
+        nombre: 'App',
+        descripción: "Es la manera más práctica para que Mahoma no tenga ni que ir a la montaña. Te permite saber si en el sitio en el que estás hay alguien disponible. Está el Tinder, sobre todo para los heteros, el Grindr, para los hombres homos, y el Qrushr, para las mujeres lesbis. Vale la pena hacerse buenas fotos.",
         descripcion: "",
         calle: "",
         image_url: "",
@@ -503,24 +503,7 @@ const ocio = [{
         website: "https://www.axelhotels.com/en/two-hotel-barcelona/hotel.html",
         type: ["hotel"]
     },
-    {
-        horario: "Abierto 24 horas",
-        nombre: "string",
-        descripcion: "string",
-        calle: "string",
-        image_url: "string",
-        website: "string",
-        type: ["hotel"]
-    },
-    {
-        horario: "Abierto 24 horas",
-        nombre: "string",
-        descripcion: "string",
-        calle: "string",
-        image_url: "string",
-        website: "string",
-        type: ["hotel"]
-    },
+
     {
         horario: "Lunes-sábado de 12:00 a 21:00",
         nombre: "Boxer",
