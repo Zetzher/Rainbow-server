@@ -75,7 +75,7 @@ var logout = require ('./routes/logout')
 var remove = require ('./routes/remove')
 var perfil = require ('./routes/perfil')
 var eventos = require ('./routes/eventos')
-// var ocio = require ('./routes/ocio')
+var ocio = require ('./routes/ocio')
 //var chat = require ('./routes/chat')
 
 
@@ -87,7 +87,7 @@ app.use ('/logout', logout)
 //app.use ('/perfil', remove)
 app.use ('/perfil', perfil)
 app.use ('/eventos', eventos)
-// app.use ('/ocio', ocio)
+app.use ('/ocio', ocio)
 // app.use ('/chat', chat)
 
 
