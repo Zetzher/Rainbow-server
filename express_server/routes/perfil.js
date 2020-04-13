@@ -23,7 +23,6 @@ router.put("/edit/:id", async (req, res, next) => {
     console.log("nombre", nombre);
     await User.findByIdAndUpdate(
       userId,
-
       { nombre, apellido, edad, photo_url }, {new:true}
     );
 
