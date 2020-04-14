@@ -21,7 +21,7 @@ const ocio = [{
         nombre: "OGB World",
         descripcion: "El mejor encuentro de sexo en grupo de la ciudad",
         image_url: "https://www.layoproducciones.com/OGBWorld/wp-content/uploads/2018/09/OGB-World-Logo-movile-4.png",
-        website: "https://www.layoproducciones.com/OGBWorld/?fbclid=IwAR0euxFdyXqUvQIzQCkcYPkZysCsUvgOWzpXIDf5OtKq04H5t2xCJILuokg",
+        website: "https://www.facebook.com/OGBWorldApp/",
         type: ["fetish", "sex"]
     },
     {
