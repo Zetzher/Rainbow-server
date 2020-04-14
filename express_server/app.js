@@ -49,12 +49,12 @@ app.use(
 app.use(
   cors({
     credentials: true,
-    origin: ['https://rainbowlgbt-45307.web.app'],
+    origin: ['http://localhost:3000'],
   })
 );
   app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://rainbowlgbt-45307.web.app');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST, OPTIONS, DELETE');
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST OPTIONS, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.setHeader('Access-Control-Allow-Credentials', true);
   next();

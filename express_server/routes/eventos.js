@@ -10,7 +10,6 @@ router.get('/', (req,res,next)=>{
     Evento
     .find()
     .then(dbResponse => {
-        console.log(dbResponse)
         res.status(200)
         .json(dbResponse)
     }
@@ -19,9 +18,9 @@ router.get('/', (req,res,next)=>{
 })
 
 //POST
-router.post('/', (req,res,next)=>{
+router.post('/create', (req,res,next)=>{
     const {nombre,descripcion,lugar} = req.body
-    console.log(req.body)
+    
     Evento
     .create({nombre,descripcion,lugar})
     .then((dbResponse) => {
@@ -32,17 +31,17 @@ router.post('/', (req,res,next)=>{
 });
 
 //EDIT EVENTO
-router.post('/edit', async (req, res, next) => {
+router.put('/edit/:id', async (req, res, next) => {
 	try {
-		//console.log(req.body);
+		console.log(req.body);
 		const {
-			id,
 			nombre,
 			descripcion,
 			lugar
-		} = req.body;
-		console.log(req.body)
-		//console.log(id);
+        } = req.body;
+        const id = req.params.id
+        
+        console.log('id :', id);
 		await Evento.findByIdAndUpdate({
 			_id: id //condición para encontrarlo
 		}, { 
@@ -60,11 +59,11 @@ router.post('/edit', async (req, res, next) => {
 });
 
 // POST delete Evento
-router.post('/:_id/delete', async (req, res, next) => {
+router.post('/:id/delete', async (req, res, next) => {
 	try {
-		const id = req.params;
-		console.log('El evento con este id va a ser borrado:', id);
-        await Evento.findOneAndRemove(id);
+        const {id} = req.params;
+        console.log('El evento con este id va a ser borrado:', id);
+        await Evento.findByIdAndRemove(id);
     } 
     catch (error) {
 		next(error);
